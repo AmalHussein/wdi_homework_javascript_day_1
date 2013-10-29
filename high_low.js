@@ -4,30 +4,23 @@
 // that they are correct and end the game. 
 // Put these in their respective javascript files. 
 
-var 
+var guess, answer; 
 guess = prompt("Hello Ninja, guess what number I'm thinking?"); 
-answer = Math.random() * (1 - 10)
+answer = Math.floor(Math.random()) * 11;
 
-while 
-	(guess !== answer) {
-	console.log("Wrong guess, try again!");
-	guess = prompt("Guess again!"); 
+	if(guess < answer){
+		guess = prompt("Guess a higher number");
 	}
-else {
-	console.log("")
-}
-
-
-
-
-
-	x = 1;
-while (x < 11){
-	if (x%2 ===0){
-		console.log("X is even");
-	} 
+	else if(guess > answer){
+		guess = prompt("Guess a lower number");
+	}
 	else {
-		console.log("X is odd");
-	}
-	x = x + 1;
+		console.log("You guess correctly!");
+		document.write("Great job Ninja. You got it right!");
 }
+
+
+
+
+
+
