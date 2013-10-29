@@ -6,7 +6,7 @@
 
 var guess, answer; 
 guess = prompt("Hello Ninja, guess what number I'm thinking?"); 
-answer = Math.floor(Math.random()) * 11;
+answer = Math.floor(Math.random() *10) + 1;
 
 	if(guess < answer){
 		guess = prompt("Guess a higher number");
